@@ -16,6 +16,8 @@ from exgbClass import user
 
 load_dotenv()
 
+TOKEN = os.getenv('TOKEN')
+
 ##### Start 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
