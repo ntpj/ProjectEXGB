@@ -98,7 +98,8 @@ async def pinfo(ctx, type: str='short'): # Return information of the user (extra
         
         
 @bot.command()
-async def cache()
+async def cache():
+    pass
 
 # %% Main
 
