@@ -7,15 +7,16 @@ from discord.ext import commands
 from discord import FFmpegPCMAudio
 import asyncio
 import youtube_dl
+from dotenv import load_dotenv
 
 sys.path.append('./functions')
 from functions.mp3_player import audio_check
 from functions.logMsg import log, logtb
 from exgbClass import user
 
+load_dotenv()
 
 ##### Start 
-TOKEN = 'TOKEN'
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 ##### Event
