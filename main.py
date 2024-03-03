@@ -6,12 +6,14 @@ import discord
 from discord.ext import commands
 from discord import FFmpegPCMAudio
 import youtube_dl
+from dotenv import load_dotenv
 
 sys.path.append('./functions')
 from functions.mp3_player import audio_check
 from functions.logMsg import log, logtb
+load_dotenv()
 
-TOKEN = 'TOKEN'
+TOKEN = os.getenv('TOKEN')
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 # Online check
@@ -19,6 +21,7 @@ bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 async def on_ready():
     log(f'Logged in as {bot.user}')
     
+  
 # %% Functions
 if True: # Not working
     @bot.command(name='play')
