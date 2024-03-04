@@ -1,3 +1,7 @@
+# Note for this branch:
+This branch is specifically for porting old codes (current Development branch) to the slash command version.
+After the port is completed, this branch will be left unused as we move back to Development branch
+
 # ProjectEXGB
 This project is a side project developed by a team of server members. Our objective is to allow for the bot to provide functionality and features of a general usage bot in a single bot called "EXGB". This bot will either be written in JavaScript or Python. 
 
